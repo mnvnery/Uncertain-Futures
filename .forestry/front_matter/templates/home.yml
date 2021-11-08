@@ -5,3 +5,22 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+- name: about_the_project
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: About the Project
+- name: impact_tracker
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Impact Tracker
