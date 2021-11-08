@@ -5,6 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - name: research_team_fields
   type: field_group_list
   fields:
