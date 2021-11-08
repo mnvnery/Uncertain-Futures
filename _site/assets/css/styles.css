@@ -1,3 +1,7 @@
-body { background-color: pink; }
+body { background-color: #7BAAA2; color: white; font-family: Frutiger, sans-serif; }
+
+@font-face { font-family: Frutiger; src: url(../fonts/FrutiRom); }
+
+@font-face { font-family: Frutiger Bold; src: url(../fonts/FrutiBol); }
 
 /*# sourceMappingURL=styles.css.map */

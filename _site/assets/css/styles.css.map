@@ -13,10 +13,10 @@
 		"@import \"main\";\n",
 		"@import \"0-base/dir-base\";\n@import \"1-modules/dir-modules\";\n@import \"2-layouts/dir-layouts\";\n\n",
 		"@import \"style\";\n",
-		"body {\n    background-color: pink; }\n",
+		"$blue: #7BAAA2;\n$yellow: #EFE05D;\n\nbody {\n    background-color: $blue;\n    color: white;\n    font-family: Frutiger, sans-serif; }\n\n@font-face {\n    font-family: Frutiger;\n    src: url(../fonts/FrutiRom); }\n\n@font-face {\n    font-family: Frutiger Bold;\n    src: url(../fonts/FrutiBol); }\n",
 		"",
 		""
 	],
 	"names": [],
-	"mappings": "AGAA,AAAA,IAAI,CAAC,EACD,gBAAgB,EAAE,IAAI,GAAG"
+	"mappings": "AGGA,AAAA,IAAI,CAAC,EACD,gBAAgB,EAJb,OAAO,EAKV,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,oBAAoB,GAAG;;AAExC,UAAU,GACN,WAAW,EAAE,QAAQ,EACrB,GAAG,EAAE,sBAAsB;;AAE/B,UAAU,GACN,WAAW,EAAE,aAAa,EAC1B,GAAG,EAAE,sBAAsB"
 }
