@@ -24,3 +24,5 @@ fields:
     schema:
       format: html-blocks
   label: Impact Tracker
+pages:
+- index.html
