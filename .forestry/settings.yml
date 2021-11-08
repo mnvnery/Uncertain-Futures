@@ -7,11 +7,9 @@ sections:
 - type: document
   path: team.html
   label: Team
-  match: "**/*"
 - type: document
   path: index.html
-  label: Index
-  match: "**/*"
+  label: Home
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
