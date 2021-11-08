@@ -27,3 +27,21 @@ fields:
     max: 
     labelField: 
   label: Research Team Fields
+- name: the_advisory_group
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: The Advisory Group
