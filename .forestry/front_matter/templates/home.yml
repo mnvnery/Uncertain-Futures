@@ -19,6 +19,11 @@ fields:
     schema:
       format: html-blocks
   label: About the Project
+- name: image_1
+  type: file
+  config:
+    maxSize: 64
+  label: Image 1
 - name: impact_tracker
   type: textarea
   default: ''
@@ -28,5 +33,10 @@ fields:
     schema:
       format: html-blocks
   label: Impact Tracker
+- name: image_2
+  type: file
+  config:
+    maxSize: 64
+  label: Image 2
 pages:
 - index.html
