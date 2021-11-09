@@ -1,8 +1,61 @@
+.header
+    position: fixed
+    z-index: 2
+    width: 100%
+    transition: 0.5s
+    top: 0
+
+.header-title
+    transition: 0.5s
+
+.hero-section
+    position: relative
+    height: 100vh
+
+.subtitle
+    position: absolute
+    bottom: 0
+    max-width: 25vw
+
 .text-container 
     margin: 4vw
+
 .line-button 
     border: 1px solid $yellow
     padding: 1vh 2vw
 
 .information-text
     margin: 0 14vw
+
+.carousel-inner
+    height: 100vh
+
+
+.carousel-item
+    height: 100%
+
+.carousel-img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: 50% 36%
+    filter: brightness(90%)
+
+form input, form textarea
+    border: 2px solid $yellow
+    background-color: transparent
+    color: $yellow
+    padding: 1.5vh 1vw 1vh 1vw
+    margin-bottom: 2vh
+
+form textarea
+    min-height: 35vh
+
+::placeholder
+    color: $yellow
+
+form button
+    border: 2px solid white
+    padding: 1vh 2vw
+    background-color: transparent
+    color: white

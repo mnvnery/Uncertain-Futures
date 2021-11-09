@@ -18,18 +18,39 @@
 
     </head>
     <body>
-        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-<div class="carousel-inner">
-    <div class="carousel-item active">
-    <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-    <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-    <img src="..." class="d-block w-100" alt="...">
+        <div class="header d-flex justify-content-between  align-items-center px-4 pt-3">
+    <h1 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h1>
+    <div class="d-flex w-50 justify-content-between px-4">
+        <p>About</p>
+        <p><a href="/Uncertain-Futures/team">Team</a></p>
+        <p>Impact</p>
+        <p>Contact</p>
     </div>
 </div>
+<div class="hero-section">
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+            <img src="/Uncertain-Futures/assets/img/slideshow-1.jpg" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+        </div>
+        
+        
+        <div class="carousel-item">
+            <img src="/Uncertain-Futures/assets/img/slideshow-2.jpg" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+        </div>
+        
+        <div class="carousel-item">
+            <img src="/Uncertain-Futures/assets/img/slideshow-3.jpg" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+        </div>
+        
+        <div class="carousel-item">
+            <img src="/Uncertain-Futures/assets/img/slideshow-4.jpg" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+        </div>
+        
+    </div>
+    </div>
+    <h4 class="subtitle p-4">Understanding inequalities around work for women over 50 in Manchester</h4>
 </div>
 
 <div class="text-container">
@@ -38,8 +59,55 @@
 <div class="d-flex justify-content-between information-text mt-5"><div>Want to know more?</div><div class="line-button"><b>Meet the Team</b></div></div>
 <h1 class="bold">Impact<br>Tracker</h1>
 <div class='information-text'><p>The Contribution of the Advisory Group to policy change: <br>This timeline shows all that the Advisory Group and the team have achieved so far and what future discoveries and impact they will be part of! Scroll right or click the arrow to explore.</p></div>
+
+<h1 class="bold">Contact Us</h1>
+<div class='information-text'>Do you have any questions, suggestions or want to get involved?
+    <br>We’d love to hear from you!</div>
+<form action="https://getform.io/f/e3cc0143-b752-4210-8f03-a636ae04e848" method="POST" class="information-text">
+    <div class="d-flex justify-content-between">
+        <input type="name" name="name" placeholder="Name" class="w-100 me-2">
+        <input type="email" name="email" placeholder="Email" class="w-100"> 
+    </div>
+    <input type="subject" name="subject" placeholder="Subject" class="w-100">
+    <textarea name="message" placeholder="Write your message here..." class="w-100"></textarea>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
 </div>
+<footer>
+    <div class="d-flex justify-content-between information-text">
+        <div>
+            <h4>Want to keep<br>up to date?</h4>
+            <p>Sign up with your email address<br>to receive news and updates.</p>
+        </div>
+        <div>
+            <h4>Visit the Uncertain<br>Futures Exhibition</h4>
+            <p>Thursday 24 June 2021<br>
+                –—<br>
+                Sunday 1 May 2022<br>
+                Manchester Art Gallery<br>
+                <u>Find out more here.</u></p>
+        </div>
+        <div class="d-flex flex-column">
+            <img src="/Uncertain-Futures/assets/img/manchesterartgallery.png" alt="Manchester Art Gallery Logo">
+            <img src="/Uncertain-Futures/assets/img/universitymanchester.png" alt="University of Manchester Logo">
+            <img src="/Uncertain-Futures/assets/img/manchestermetropolitan.svg" alt="Manchester Metropolitan Logo">
+        </div>
+    </div>
+</footer>
+<script>
+window.onscroll = function() {scrollFunction()};
 
-
+function scrollFunction() {
+if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+document.querySelector(".header-title").style.fontSize = "25px";
+document.querySelector(".header").style.backgroundColor = "#7BAAA2";
+} else {
+document.querySelector(".header-title").style.fontSize = "35px";
+document.querySelector(".header").style.backgroundColor = "transparent";
+}
+}
+</script>
     </body>
 </html>
