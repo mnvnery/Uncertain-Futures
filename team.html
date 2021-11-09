@@ -109,3 +109,8 @@ team_profiles:
   link: 'https://www.research.manchester.ac.uk/portal/elaine.dewhurst.html  '
 
 ---
+{% for item in page.research_team_fields %}
+<h1>{{ item.title }}</h1>
+<div>{{ item.description }}</div>
+{% endfor %}
+

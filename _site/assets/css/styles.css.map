@@ -7,16 +7,20 @@
 		"_sass/0-base/dir-base.sass",
 		"_sass/0-base/style.sass",
 		"_sass/1-modules/dir-modules.sass",
+		"_sass/1-modules/index.sass",
+		"_sass/1-modules/team.sass",
 		"_sass/2-layouts/dir-layouts.sass"
 	],
 	"sourcesContent": [
 		"@import \"main\";\n",
 		"@import \"0-base/dir-base\";\n@import \"1-modules/dir-modules\";\n@import \"2-layouts/dir-layouts\";\n\n",
 		"@import \"style\";\n",
-		"$blue: #7BAAA2;\n$yellow: #EFE05D;\n\nbody {\n    background-color: $blue;\n    color: white;\n    font-family: Frutiger, sans-serif; }\n\n@font-face {\n    font-family: Frutiger;\n    src: url(../fonts/FrutiRom); }\n\n@font-face {\n    font-family: Frutiger Bold;\n    src: url(../fonts/FrutiBol); }\n",
+		"$blue: #7BAAA2;\n$yellow: #EFE05D;\n\nbody {\n    background-color: $blue;\n    color: white;\n    font-family: Frutiger, sans-serif !important; }\n\n@font-face {\n    font-family: Frutiger;\n    src: url(../fonts/FrutiRom); }\n\n@font-face {\n    font-family: Frutiger Bold;\n    src: url(../fonts/FrutiBol); }\n\n.bold {\n    font-family: Frutiger Bold, sans-serif !important; }\n",
+		"@import \"index\";\n@import \"team\";\n",
+		".text-container {\n    margin: 4vw; }\n.line-button {\n    border: 1px solid $yellow;\n    padding: 1vh 2vw; }\n\n.information-text {\n    margin: 0 14vw; }\n",
 		"",
 		""
 	],
 	"names": [],
-	"mappings": "AGGA,AAAA,IAAI,CAAC,EACD,gBAAgB,EAJb,OAAO,EAKV,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,oBAAoB,GAAG;;AAExC,UAAU,GACN,WAAW,EAAE,QAAQ,EACrB,GAAG,EAAE,sBAAsB;;AAE/B,UAAU,GACN,WAAW,EAAE,aAAa,EAC1B,GAAG,EAAE,sBAAsB"
+	"mappings": "AGGA,AAAA,IAAI,CAAC,EACD,gBAAgB,EAJb,OAAO,EAKV,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,+BAA+B,GAAG;;AAEnD,UAAU,GACN,WAAW,EAAE,QAAQ,EACrB,GAAG,EAAE,sBAAsB;;AAE/B,UAAU,GACN,WAAW,EAAE,aAAa,EAC1B,GAAG,EAAE,sBAAsB;;AAE/B,AAAA,KAAK,CAAC,EACF,WAAW,EAAE,oCAAoC,GAAG;;AEjBxD,AAAA,eAAe,CAAC,EACZ,MAAM,EAAE,GAAG,GAAG;;AAClB,AAAA,YAAY,CAAC,EACT,MAAM,EAAE,GAAG,CAAC,KAAK,CFFZ,OAAO,EEGZ,OAAO,EAAE,OAAO,GAAG;;AAEvB,AAAA,iBAAiB,CAAC,EACd,MAAM,EAAE,MAAM,GAAG"
 }
