@@ -1,7 +1,15 @@
-body { background-color: #7BAAA2; color: white; font-family: Frutiger, sans-serif; }
+body { background-color: #7BAAA2; color: white; font-family: Frutiger, sans-serif !important; }
 
 @font-face { font-family: Frutiger; src: url(../fonts/FrutiRom); }
 
 @font-face { font-family: Frutiger Bold; src: url(../fonts/FrutiBol); }
+
+.bold { font-family: Frutiger Bold, sans-serif !important; }
+
+.text-container { margin: 4vw; }
+
+.line-button { border: 1px solid #EFE05D; padding: 1vh 2vw; }
+
+.information-text { margin: 0 14vw; }
 
 /*# sourceMappingURL=styles.css.map */
