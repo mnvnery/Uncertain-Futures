@@ -6,6 +6,10 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: slideshow
+  type: image_gallery
+  config: {}
+  label: Slideshow
 - name: about_the_project
   type: textarea
   default: ''
