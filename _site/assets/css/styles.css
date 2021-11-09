@@ -6,10 +6,38 @@ body { background-color: #7BAAA2; color: white; font-family: Frutiger, sans-seri
 
 .bold { font-family: Frutiger Bold, sans-serif !important; }
 
+footer { background-color: #EFE05D; }
+
+.header { position: fixed; z-index: 2; width: 100%; transition: 0.5s; top: 0; }
+
+.header-title { transition: 0.5s; }
+
+.hero-section { position: relative; height: 100vh; }
+
+.subtitle { position: absolute; bottom: 0; max-width: 25vw; }
+
 .text-container { margin: 4vw; }
 
 .line-button { border: 1px solid #EFE05D; padding: 1vh 2vw; }
 
 .information-text { margin: 0 14vw; }
+
+.carousel-inner { height: 100vh; }
+
+.carousel-item { height: 100%; }
+
+.carousel-img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 36%; filter: brightness(90%); }
+
+form input, form textarea { border: 2px solid #EFE05D; background-color: transparent; color: #EFE05D; padding: 1.5vh 1vw 1vh 1vw; margin-bottom: 2vh; }
+
+form textarea { min-height: 35vh; }
+
+::placeholder { color: #EFE05D; }
+
+form button { border: 2px solid white; padding: 1vh 2vw; background-color: transparent; color: white; }
+
+.header-team { background-color: #7BAAA2; }
+
+.team-container { padding-top: 20vh; }
 
 /*# sourceMappingURL=styles.css.map */

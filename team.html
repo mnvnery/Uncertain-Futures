@@ -109,8 +109,19 @@ team_profiles:
   link: 'https://www.research.manchester.ac.uk/portal/elaine.dewhurst.html  '
 
 ---
+<div class="header header-team d-flex justify-content-between  align-items-center px-4 pt-3">
+  <a href="{{ site.baseurl }}/team.html"><h4 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h4></a>
+  <div class="d-flex w-50 justify-content-between px-4">
+      <p>About</p>
+      <p><a href="{{ site.baseurl }}/team">Team</a></p>
+      <p>Impact</p>
+      <p>Contact</p>
+  </div>
+</div>
+
+<div class="text-container team-container">
 {% for item in page.research_team_fields %}
 <h1>{{ item.title }}</h1>
-<div>{{ item.description }}</div>
+<div class="information-text">{{ item.description }}</div>
 {% endfor %}
-
+</div>
