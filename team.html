@@ -38,27 +38,27 @@ research_team_fields:
   title: Manchester Art Gallery
 the_advisory_group:
 - name: Louise Wont
-  description: "<p>Wai Yin Society</p>"
+  description: "Wai Yin Society"
 - name: Patricia Williams
-  description: "<p>Manchester resident</p>"
+  description: "Manchester resident"
 - name: Circle Steele
-  description: "<p>Wai Yin Society</p>"
+  description: "Wai Yin Society"
 - name: Nadia Siddiqui
-  description: "<p>Women’s Voices</p>"
+  description: "Women’s Voices"
 - name: Elayne Redford
-  description: "<p>Work and Skills Manchester City Council</p>"
+  description: "Work and Skills Manchester City Council"
 - name: Jila Mozoun
-  description: "<p>Raha – Women’s Voices</p>"
+  description: "Raha – Women’s Voices"
 - name: Tendayi Madzunzu
-  description: "<p>ZIWO <br>(Zimbabwe Women's Organisation)</p>"
+  description: "ZIWO <br>(Zimbabwe Women's Organisation)"
 - name: Teodora Ilieva
-  description: "<p>Manchester resident</p>"
+  description: "Manchester resident"
 - name: Marie Greenhalgh
-  description: "<p>Wythenshawe Good Neighbours</p>"
+  description: "Wythenshawe Good Neighbours"
 - name: Rohina Ghafoor
-  description: "<p>MBMEN <br>(Manchester Black Minority Ethnic Network)</p>"
+  description: "MBMEN <br>(Manchester Black Minority Ethnic Network)"
 - name: Atiha Chaudry
-  description: "<p>GMBAMEN<br>(Greater Manchester Black Asian Minority Ethnic Network)</p>"
+  description: "GMBAMEN<br>(Greater Manchester Black Asian Minority Ethnic Network)"
 - name: Sally Casey
   description: Aquarius Tenants and Residents Association
 - name: Erinma Bell
@@ -109,19 +109,63 @@ team_profiles:
   link: 'https://www.research.manchester.ac.uk/portal/elaine.dewhurst.html  '
 
 ---
-<div class="header header-team d-flex justify-content-between  align-items-center px-4 pt-3">
-  <a href="{{ site.baseurl }}/team.html"><h4 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h4></a>
+<div class="header header-team d-flex justify-content-between  align-items-center pt-4">
+  <a href="{{ site.baseurl }}/"><h4 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h4></a>
   <div class="d-flex w-50 justify-content-between px-4">
-      <p>About</p>
-      <p><a href="{{ site.baseurl }}/team">Team</a></p>
-      <p>Impact</p>
-      <p>Contact</p>
+    <p><a href="{{ site.baseurl }}/#about">About</a></p>
+    <p><a href="{{ site.baseurl }}/team"><u class="yellow-underline">Team</u></a></p>
+    <p><a href="{{ site.baseurl }}/#impact">Impact</a></p>
+    <p><a href="{{ site.baseurl }}/#contact">Contact</a></p>
   </div>
 </div>
 
 <div class="text-container team-container">
-{% for item in page.research_team_fields %}
-<h1>{{ item.title }}</h1>
-<div class="information-text">{{ item.description }}</div>
-{% endfor %}
+  <h1 class="bold mb-5">Participatory<br>Research Team</h1>
+  {% for item in page.research_team_fields reversed %}
+  <h3 class="team-text yellow-underline mb-3"><b>{{ item.title }}</b></h3>
+  <div class="team-text mb-5">{{ item.description }}</div>
+  {% endfor %}
+
+  <h3 class="team-text yellow-underline mb-3"><b>The Advisory Group</b></h3>
+  <div class="group-grid team-text mb-5">
+    {% for item in page.the_advisory_group reversed %}
+    <div class="group-item">
+      <p><b>{{ item.name }}</b><br><span class="item-description">{{ item.description }}</span></p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="team-text">
+    <h3 class="mb-3"><b>Profiles</b></h3>
+    <div class="border-yellow"></div>
+    {% for item in page.team_profiles %}
+    <div class="d-flex justify-content-between align-items-start mt-3">
+      <p class="w-25">{{ item.name }}</p>
+      <p class="w-25">{{ item.title }}</p>
+      <p class="w-25 text-end">{{ item.institution }}</p>
+    </div>
+    <div class="border-yellow"></div>
+   {% endfor %}
+  </div>
 </div>
+
+<footer>
+  <div class="d-flex justify-content-between py-5">
+      <div>
+          <h4 class="bold">Want to keep<br>up to date?</h4>
+          <p>Sign up with your email address<br>to receive news and updates.</p>
+      </div>
+      <div>
+          <h4 class="bold">Visit the Uncertain<br>Futures Exhibition</h4>
+          <p>Thursday 24 June 2021<br>
+              –—<br>
+              Sunday 1 May 2022<br>
+              <b>Manchester Art Gallery</b><br>
+              <a href="https://manchesterartgallery.org/exhibitions-and-events/exhibition/suzanne-lacy-uncertain-futures/" target="_blank" class="footer-a"><u>Find out more here.</u></a></p>
+      </div>
+      <div class="d-flex flex-column">
+          <img src="{{ site.baseurl }}/assets/img/manchesterartgallery.png" alt="Manchester Art Gallery Logo" class="logo">
+          <img src="{{ site.baseurl }}/assets/img/universitymanchester.png" alt="University of Manchester Logo" class="logo">
+          <img src="{{ site.baseurl }}/assets/img/manchestermetropolitan.svg" alt="Manchester Metropolitan Logo" class="logo">
+      </div>
+  </div>
+</footer>

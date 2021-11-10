@@ -8,14 +8,29 @@ body
 
 @font-face 
     font-family: Frutiger 
-    src: url(../fonts/FrutiRom)
+    src: url(../fonts/Frutiger.woff)
 
 @font-face 
-    font-family: Frutiger Bold
-    src: url(../fonts/FrutiBol)
+    font-family: Frutiger
+    src: url(../fonts/Frutiger_bold.woff)
+    font-weight: bold
 
 .bold 
-    font-family: Frutiger Bold, sans-serif !important
+    font-family: Frutiger, sans-serif !important
+    font-weight: bold
 
 footer
     background-color: $yellow
+    padding: 0 18vw
+
+a
+    color: white
+    text-decoration: none
+
+a:hover
+    color: $yellow
+
+@media (min-width: 1200px)
+    .h1, h1
+        line-height: 2.5rem 
+
