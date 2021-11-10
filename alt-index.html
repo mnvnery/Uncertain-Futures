@@ -149,12 +149,12 @@ years:
             <div class="month">{{ m.month }}</div>
                 {% for e in m.events reversed %}
                 <div class="event">
-                    <div class="d-flex flex-column-reverse">
-                        <p class="event-text">{{ e.event }}</p>
-                        <div class="line"></div>
+                    <div class="d-flex flex-column-reverse event-flex">
+                        <div class="event-text event-top">{{ e.event }}</div>
+                        <div class="line line-top"></div>
                         <div class="dot"></div>
-                        <div class="line"></div>
-                        <p class="event-text">{{ e.event }}</p>
+                        <div class="line line-bottom"></div>
+                        <div class="event-text event-bottom">{{ e.event }}</div>
                     </div>
                 </div>
                 {% endfor %}
@@ -249,12 +249,7 @@ if (mediaQuery.matches) {
     }
     }
 }
-
-var newWidth = $('.timeline').width();
-$( document ).ready(function() {
-    $(".middle-line").width(newWidth); 
-    console.log(newWidth);
-});
+console.log($('.event:nth-of-type(even)'));
 
 
 </script>

@@ -2,8 +2,7 @@
     width: 100%
     position: relative
     overflow: auto
-    white-space: nowrap
-    
+    padding-left: 4vw
 
 .middle-line
     height: 2px
@@ -12,7 +11,10 @@
     background: $yellow
     position: absolute 
     z-index: 0
+    width: 231vw
 
+.event-flex:nth-child(odd) 
+    visibility: none !important
 
 .line
     border-left: 2px solid white
@@ -28,20 +30,20 @@
 
 .year
     font-weight: bold
-    font-size: 1.3rem
+    font-size: 2.3rem
     background-color: $blue 
     z-index: 2
 
 .month
     font-weight: bold
-    font-size: 1.1rem
+    font-size: 1.5rem
     writing-mode: tb-rl
     transform: rotate(-180deg)
     background-color: $blue 
     z-index: 2
 
-.event, .yeat, .month
+.event, .year, .month
     margin-right: 2vw
 
 .event-text
-    max-width: 10vw
+    min-width: 16vw
