@@ -126,7 +126,7 @@ year:
     <div class="d-flex align-items-center">
         {% for y in page.year %}
             <div class="year">{{ y.year }}</div>
-            {% for month in page.year %}
+            {% for month in page.year %}{% endfor %}
             <div class="month">Feb</div>
             <div class="event">
                 <div class="d-flex flex-column-reverse">
