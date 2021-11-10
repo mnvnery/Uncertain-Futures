@@ -38,7 +38,7 @@ fields:
   config:
     maxSize: 64
   label: Image 2
-- name: year
+- name: years
   type: field_group_list
   fields:
   - name: year
@@ -46,7 +46,7 @@ fields:
     config:
       required: false
     label: Year
-  - name: month
+  - name: months
     type: field_group_list
     fields:
     - name: month
@@ -54,7 +54,7 @@ fields:
       config:
         required: false
       label: Month
-    - name: event
+    - name: events
       type: field_group_list
       fields:
       - name: event
@@ -70,16 +70,16 @@ fields:
         min: 
         max: 
         labelField: 
-      label: Event
+      label: Events
     config:
       min: 
       max: 
       labelField: 
-    label: Month
+    label: Months
   config:
     min: 
     max: 
     labelField: 
-  label: Year
+  label: Years
 pages:
 - index.html
