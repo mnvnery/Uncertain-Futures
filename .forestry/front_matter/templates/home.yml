@@ -38,5 +38,38 @@ fields:
   config:
     maxSize: 64
   label: Image 2
+- name: timeline
+  type: field_group_list
+  fields:
+  - name: year
+    type: field_group_list
+    fields:
+    - name: month
+      type: field_group_list
+      fields:
+      - name: event
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: Event
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Month
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Year
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Timeline
 pages:
 - index.html
