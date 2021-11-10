@@ -1,17 +1,18 @@
 .timeline 
     width: 100%
-    overflow-x: scroll
     position: relative
+    overflow: auto
+    white-space: nowrap
     
 
 .middle-line
-    min-width: 100vw
     height: 2px
     top: 50%
     transform: translateY(-50%)
     background: $yellow
     position: absolute 
     z-index: 0
+
 
 .line
     border-left: 2px solid white
@@ -39,5 +40,8 @@
     background-color: $blue 
     z-index: 2
 
+.event, .yeat, .month
+    margin-right: 2vw
 
-
+.event-text
+    max-width: 10vw
