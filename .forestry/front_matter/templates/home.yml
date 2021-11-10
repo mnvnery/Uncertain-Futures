@@ -66,6 +66,10 @@ fields:
           schema:
             format: html-blocks
         label: Event
+      - name: top_or_bottom
+        type: boolean
+        label: Top or Bottom
+        default: false
       config:
         min: 
         max: 
