@@ -49,7 +49,7 @@ the_advisory_group:
   description: "Work and Skills Manchester City Council"
 - name: Jila Mozoun
   description: "Raha – Women’s Voices"
-- name: Tendayi Madzunzu
+- name: Tendayi Madzunzu
   description: "ZIWO <br>(Zimbabwe Women's Organisation)"
 - name: Teodora Ilieva
   description: "Manchester resident"
@@ -109,6 +109,21 @@ team_profiles:
   link: 'https://www.research.manchester.ac.uk/portal/elaine.dewhurst.html  '
 
 ---
+<div class="header-mobile header-team d-flex pt-4 pb-2">
+<div class="d-flex justify-content-between align-items-start top-header"><a href="{{ site.baseurl }}/"><h1 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h1></a><button class="hamburger hamburger--collapse" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button></div>
+</div>
+<div class="justify-content-center flex-column navbar">
+    <p><a href="{{ site.baseurl }}/#about">About</a></p>
+    <p><a href="{{ site.baseurl }}/team"><u class="yellow-underline">Team</u></a></p>
+    <p><a href="{{ site.baseurl }}/#impact">Impact</a></p>
+    <p><a href="{{ site.baseurl }}/#contact">Contact</a></p>
+</div>
+
+
 <div class="header header-team d-flex justify-content-between  align-items-center pt-4">
   <a href="{{ site.baseurl }}/"><h4 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h4></a>
   <div class="d-flex w-50 justify-content-between px-4">
@@ -138,7 +153,7 @@ team_profiles:
     <h3 class="mb-3"><b>Profiles</b></h3>
     <div class="border-yellow"></div>
     {% for item in page.team_profiles %}
-    <div class="d-flex justify-content-between align-items-start mt-3">
+    <div class="d-flex justify-content-between align-items-start mt-3 profile-text">
       <p class="w-25">{{ item.name }}</p>
       <p class="w-25">{{ item.title }}</p>
       <p class="w-25 text-end">{{ item.institution }}</p>
@@ -148,13 +163,43 @@ team_profiles:
   </div>
 </div>
 
+
 <footer>
-  <div class="d-flex justify-content-between py-5">
+  <div class="d-flex justify-content-between py-5 footer-flex">
       <div>
           <h4 class="bold">Want to keep<br>up to date?</h4>
           <p>Sign up with your email address<br>to receive news and updates.</p>
+          <!-- Begin Mailchimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+              <style type="text/css">
+                  #mc_embed_signup{clear:left; padding: 0; display: flex; }
+                  #mc_embed_signup input {color: white !important; border: solid 2px white; margin-right: 0.5vw;}
+                  #mc_embed_signup ::placeholder {color: white !important;}
+                  #mc_embed_signup_scroll {display: flex;}
+                  #mc_embed_signup form { padding: 0;}
+      
+                  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+              </style>
+              <div id="mc_embed_signup">
+              <form action="https://uncertainfutures.us20.list-manage.com/subscribe/post?u=79c5a2ca7ed5a98f716f33ad5&amp;id=a3fa28b765" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                  
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_79c5a2ca7ed5a98f716f33ad5_a3fa28b765" tabindex="-1" value=""></div>
+                      <div class="optionalParent">
+                          <div class="clear foot">
+                              <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+              </div>
+
+              <!--End mc_embed_signup-->
       </div>
-      <div>
+      <div class="exhibition-info">
           <h4 class="bold">Visit the Uncertain<br>Futures Exhibition</h4>
           <p>Thursday 24 June 2021<br>
               –—<br>
@@ -162,10 +207,11 @@ team_profiles:
               <b>Manchester Art Gallery</b><br>
               <a href="https://manchesterartgallery.org/exhibitions-and-events/exhibition/suzanne-lacy-uncertain-futures/" target="_blank" class="footer-a"><u>Find out more here.</u></a></p>
       </div>
-      <div class="d-flex flex-column">
+      <div class="d-flex logos-flex">
           <img src="{{ site.baseurl }}/assets/img/manchesterartgallery.png" alt="Manchester Art Gallery Logo" class="logo">
           <img src="{{ site.baseurl }}/assets/img/universitymanchester.png" alt="University of Manchester Logo" class="logo">
           <img src="{{ site.baseurl }}/assets/img/manchestermetropolitan.svg" alt="Manchester Metropolitan Logo" class="logo">
       </div>
   </div>
+</footer>
 </footer>
