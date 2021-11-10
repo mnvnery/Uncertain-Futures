@@ -2,7 +2,7 @@ title: Uncertain Futures Project
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Uncertain Futures is a collaborative artwork highlighting intersectional issues around work for women over 50 focusing on gender, age, race, disability and class. 
-url: "uncertainfuturesproject.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://uncertainfuturesproject.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
