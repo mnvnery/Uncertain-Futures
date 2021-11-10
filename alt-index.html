@@ -59,6 +59,25 @@ years:
     events:
     - event: "<p>Uncertain Futures<br>Begins</p>"
   year: "2020"
+  months:
+  - month: Nov
+    events:
+    - event: "<p>Uncertain Futures Launch: November 2020 at the ESRC Festival of Social
+        Science Event: Uncertain Futures.<br>Watch it here.</p>"
+  - month: Aug
+    events:
+    - event: "<p>Submission made to the UN High Commissioner for Human Rights Special
+        Rapporteur on Older People and Human Rights</p>"
+  - month: Jun
+    events:
+    - event: "<p>Advisory Group develop Matrix</p>"
+  - month: Mar
+    events:
+    - event: "<p>Advisory group begins<br>development and<br>monthly meetings</p>"
+  - month: Feb
+    events:
+    - event: "<p>Uncertain Futures<br>Begins</p>"
+
 ---
 <div class="header-mobile d-flex pt-4 pb-2">
      <div class="d-flex justify-content-between align-items-start top-header"><h1 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h1><button class="hamburger hamburger--collapse" type="button">
@@ -124,19 +143,22 @@ years:
 <div class="timeline">
     <div class="middle-line"></div>
     <div class="d-flex align-items-center">
-        {% for y in page.year %}
+        {% for y in page.years reversed %}
             <div class="year">{{ y.year }}</div>
-            {% for month in page.year %}{% endfor %}
-            <div class="month">Feb</div>
-            <div class="event">
-                <div class="d-flex flex-column-reverse">
-                    <p>Uncertain Futures Begins</p>
-                    <div class="line"></div>
-                    <div class="dot"></div>
-                    <div class="line"></div>
-                    <p>Uncertain Futures Begins</p>
+            {% for m in y.months reversed %}
+            <div class="month">{{ m.month }}</div>
+                {% for e in m.events reversed %}
+                <div class="event">
+                    <div class="d-flex flex-column-reverse">
+                        <p class="event-text">{{ e.event }}</p>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <p class="event-text">{{ e.event }}</p>
+                    </div>
                 </div>
-            </div>
+                {% endfor %}
+            {% endfor %}
         {% endfor %}
     </div>
 </div>
@@ -227,4 +249,12 @@ if (mediaQuery.matches) {
     }
     }
 }
+
+var newWidth = $('.timeline').width();
+$( document ).ready(function() {
+    $(".middle-line").width(newWidth); 
+    console.log(newWidth);
+});
+
+
 </script>
