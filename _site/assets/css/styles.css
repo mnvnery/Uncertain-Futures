@@ -6,11 +6,11 @@ body { background-color: #7BAAA2; color: white; font-family: Frutiger, sans-seri
 
 .bold { font-family: Frutiger, sans-serif !important; font-weight: bold; }
 
-footer { background-color: #EFE05D; padding: 0 18vw; }
+footer { background-color: #DED15B; padding: 0 18vw; }
 
 a { color: white; text-decoration: none; }
 
-a:hover { color: #EFE05D; }
+a:hover { color: #DED15B; }
 
 #mc_embed_signup { display: flex; color: #7BAAA2; }
 
@@ -30,7 +30,7 @@ a:hover { color: #EFE05D; }
 
 .text-container { margin: 4vw; }
 
-.line-button { border: 2px solid #EFE05D; padding: 1vh 2vw; }
+.line-button { border: 2px solid #DED15B; padding: 1vh 2vw; }
 
 .information-text { margin: 0 14vw; font-size: 1.4rem; }
 
@@ -40,11 +40,11 @@ a:hover { color: #EFE05D; }
 
 .carousel-img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 36%; filter: brightness(70%); }
 
-form input, form textarea { border: 2px solid #EFE05D; background-color: transparent; color: #EFE05D; padding: 1.5vh 1vw 1vh 1vw; margin-bottom: 2vh; border-radius: 0 !important; }
+form input, form textarea { border: 2px solid #DED15B; background-color: transparent; color: #DED15B; padding: 1.5vh 1vw 1vh 1vw; margin-bottom: 2vh; border-radius: 0 !important; }
 
 form textarea { min-height: 35vh; }
 
-::placeholder { color: #EFE05D; }
+::placeholder { color: #DED15B; }
 
 form button { border: 2px solid white; padding: 1vh 2vw; background-color: transparent; color: white; }
 
@@ -66,7 +66,7 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .team-container { padding-top: 20vh; }
 
-.yellow-underline { text-decoration: underline; text-decoration-color: #EFE05D; }
+.yellow-underline { text-decoration: underline; text-decoration-color: #DED15B; }
 
 .group-item { max-width: 11vw; }
 
@@ -74,7 +74,7 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .group-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
 
-.border-yellow { border: 1px solid #EFE05D; }
+.border-yellow { border: 1px solid #DED15B; }
 
 .profile-name { width: 20vw; }
 
@@ -88,7 +88,7 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .timeline { width: 100%; overflow-x: scroll; position: relative; }
 
-.middle-line { min-width: 100vw; height: 2px; top: 50%; transform: translateY(-50%); background: #EFE05D; position: absolute; z-index: 0; }
+.middle-line { min-width: 100vw; height: 2px; top: 50%; transform: translateY(-50%); background: #DED15B; position: absolute; z-index: 0; }
 
 .line { border-left: 2px solid white; height: 7vh; margin-left: 4px; }
 
