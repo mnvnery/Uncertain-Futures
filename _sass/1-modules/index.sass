@@ -15,11 +15,14 @@
 .hero-section
     position: relative
     height: 100vh
+    
 
-.subtitle
+
+.hero-info 
     position: absolute
     bottom: 0
-    max-width: 25vw
+    right: 10vw
+    padding: 0 4vw
 
 .text-container 
     margin: 4vw
@@ -72,3 +75,7 @@ form button
     width: 100%
     max-height: 85vh
     object-fit: cover
+
+@media screen and (max-width: 600)
+    .subtitle
+        max-width: 40vw !important
