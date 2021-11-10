@@ -104,6 +104,10 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .event-text { min-width: 16vw; }
 
+.invisible { visibility: hidden; }
+
+@media (max-width: 600px) { .event-text { min-width: 50vw; } .event, .year, .month { margin-right: 8vw; } .middle-line { width: 830vw; } }
+
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; border: 0; margin: 0; overflow: visible; }
 
