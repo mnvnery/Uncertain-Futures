@@ -12,6 +12,10 @@ a { color: white; text-decoration: none; }
 
 a:hover { color: #EFE05D; }
 
+#mc_embed_signup { display: flex; color: #7BAAA2; }
+
+#mc_embed_signup form { padding: none !important; }
+
 @media (min-width: 1200px) { .h1, h1 { line-height: 2.5rem; } }
 
 .header { position: fixed; z-index: 2; width: 100%; transition: 0.5s; top: 0; padding: 0 4vw; }
@@ -22,7 +26,7 @@ a:hover { color: #EFE05D; }
 
 .hero-section { position: relative; height: 100vh; }
 
-.subtitle { position: absolute; bottom: 0; max-width: 25vw; }
+.hero-info { position: absolute; bottom: 0; right: 10vw; padding: 0 4vw; }
 
 .text-container { margin: 4vw; }
 
@@ -47,6 +51,8 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 .footer-a:hover { color: #7BAAA2; }
 
 .separator-img { width: 100%; max-height: 85vh; object-fit: cover; }
+
+@media screen and (max-width: 600) { .subtitle { max-width: 40vw !important; } }
 
 .header-team { background-color: #7BAAA2; }
 
