@@ -88,7 +88,7 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .timeline { width: 100%; position: relative; overflow: auto; padding-left: 4vw; }
 
-.middle-line { height: 2px; top: 50%; transform: translateY(-50%); background: #DED15B; position: absolute; z-index: 0; width: 231vw; }
+.middle-line { height: 2px; top: 50%; transform: translateY(-50%); background: #DED15B; position: absolute; z-index: 0; width: 280vw; }
 
 .event-flex:nth-child(odd) { visibility: none !important; }
 
@@ -105,6 +105,8 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 .event-text { min-width: 16vw; }
 
 .invisible { visibility: hidden; }
+
+.timeline-arrow { display: flex; justify-content: flex-end; width: 100vw; padding-right: 2vw; margin-bottom: 4vh; }
 
 @media (max-width: 600px) { .event-text { min-width: 50vw; } .event, .year, .month { margin-right: 8vw; } .middle-line { width: 830vw; } }
 
