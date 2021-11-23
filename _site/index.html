@@ -329,30 +329,29 @@
 </footer>
 <script>
 const mediaQuery = window.matchMedia('(min-width: 600px)')
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll', () => {
 
 if (mediaQuery.matches) {
 
-
-    function scrollFunction() {
         if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
             document.querySelector(".title-desktop").style.fontSize = "1.5rem";
             document.querySelector(".title-desktop").style.lineHeight = "1.2";
             document.querySelector(".header").style.backgroundColor = "#7BAAA2";
+            console.log("test");
         } else {
             document.querySelector(".title-desktop").style.fontSize = "2.5rem";
             document.querySelector(".header").style.backgroundColor = "transparent";
         }
-    }
+
 } else {
-    function scrollFunction() {
+
         if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             document.querySelector(".header-mobile").style.backgroundColor = "#7BAAA2";
         } else {
             document.querySelector(".header-mobile").style.backgroundColor = "transparent";
         }
-    }
 }
+});
 </script>
     </body>
 </html>
