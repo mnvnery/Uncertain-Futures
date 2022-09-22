@@ -28,7 +28,7 @@ info: "<p>Phase 2 of the project will begin in September 2022 and is centred aro
     </div>
     <div class="justify-content-center flex-column navbar">
         <p><a href="{{ site.baseurl }}/#about">About</a></p>
-        <p><a href="{{ site.baseurl }}/team"><u class="yellow-underline">Team</u></a></p>
+        <p><a href="{{ site.baseurl }}/team">Team</a></p>
         <p><a href="{{ site.baseurl }}/#impact">Impact</a></p>
         <p><a href="{{ site.baseurl }}/research-themes">Research Themes</a></p>
         <p><a href="{{ site.baseurl }}/#contact">Contact</a></p>
@@ -39,7 +39,7 @@ info: "<p>Phase 2 of the project will begin in September 2022 and is centred aro
         <a href="{{ site.baseurl }}/"><h4 class="header-title"><b>Uncertain Futures</b><br>+100 Women</h4></a>
         <div class="d-flex w-50 justify-content-between px-4">
             <p><a href="{{ site.baseurl }}/#about">About</a></p>
-            <p><a href="{{ site.baseurl }}/team"><u class="yellow-underline">Team</u></a></p>
+            <p><a href="{{ site.baseurl }}/team">Team</a></p>
             <p><a href="{{ site.baseurl }}/#impact">Impact</a></p>
             <p><a href="{{ site.baseurl }}/research-themes">Research Themes</a></p>
             <p><a href="{{ site.baseurl }}/#contact">Contact</a></p>
@@ -47,9 +47,6 @@ info: "<p>Phase 2 of the project will begin in September 2022 and is centred aro
     </div>
     
     <div class="text-container team-container">
-        <h1 class="bold mb-5">Participatory<br>Research Team</h1>
-        {% for item in page.research_team_fields reversed %}
-        <h3 class="team-text yellow-underline mb-3"><b>{{ item.title }}</b></h3>
-        <div class="team-text mb-5">{{ item.description }}</div>
-        {% endfor %}
+        <h1 class="bold mb-5">{{page.title}}</h1>
+        <div class="team-text mb-5 phase">{{ page.info }}</div>
     </div>
