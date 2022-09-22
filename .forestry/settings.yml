@@ -7,11 +7,9 @@ sections:
 - type: document
   path: phase2.html
   label: Phase 2
-  match: "**/*"
 - type: document
   path: phase1.html
   label: 'Phase 1 '
-  match: "**/*"
 - type: document
   path: team.html
   label: Team
