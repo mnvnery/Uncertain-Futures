@@ -10,14 +10,15 @@ fields:
   type: field_group_list
   fields:
   - name: title
-    type: textarea
-    default: ''
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
     label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
   - name: info
     type: textarea
     default: ''
