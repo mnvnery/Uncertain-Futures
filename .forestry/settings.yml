@@ -5,21 +5,20 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
-  path: research-themes.html
-  label: Research Themes
-  match: "**/*"
-- type: document
-  path: phase2.html
-  label: Phase 2
-- type: document
-  path: phase1.html
-  label: 'Phase 1 '
+  path: index.html
+  label: Home
 - type: document
   path: team.html
   label: Team
 - type: document
-  path: index.html
-  label: Home
+  path: phase1.html
+  label: 'Phase 1 '
+- type: document
+  path: phase2.html
+  label: Phase 2
+- type: document
+  path: research-themes.html
+  label: Research Themes
 upload_dir: assets/img
 public_path: assets/img
 front_matter_path: ''
