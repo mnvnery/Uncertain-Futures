@@ -5,3 +5,26 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+- name: themes
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: info
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Info
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Themes
