@@ -45,6 +45,11 @@ fields:
       schema:
         format: html-blocks
     label: Description
+  - name: portrait
+    type: file
+    config:
+      maxSize: 64
+    label: Portrait
   config:
     min: 
     max: 
