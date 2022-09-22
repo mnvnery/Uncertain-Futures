@@ -11,7 +11,7 @@
     background: $yellow
     position: absolute 
     z-index: 0
-    width: 710vw
+    width: 900vw
 
 .event-flex:nth-child(odd) 
     visibility: none !important
@@ -48,6 +48,9 @@
 .event-text
     min-width: 16vw
 
+.event-text-wider
+    min-width: 30vw
+
 .invisible 
     visibility: hidden
 
@@ -60,10 +63,13 @@
 
 @media (max-width: 600px)
     .event-text
-        min-width: 50vw
-        
+        min-width: 60vw
+
+    .event-text-wider
+        min-width: 85vw
+
     .event, .year, .month
         margin-right: 8vw
     
     .middle-line
-        width: 1468vw
+        width: 3000vw
