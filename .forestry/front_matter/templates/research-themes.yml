@@ -30,7 +30,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: title
   label: Themes
 pages:
 - research-themes.html
