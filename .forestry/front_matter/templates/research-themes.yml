@@ -28,3 +28,5 @@ fields:
     max: 
     labelField: 
   label: Themes
+pages:
+- research-themes.html
