@@ -5,6 +5,10 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
+  path: research-themes.html
+  label: Research Themes
+  match: "**/*"
+- type: document
   path: phase2.html
   label: Phase 2
 - type: document
