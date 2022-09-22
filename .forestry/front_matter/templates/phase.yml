@@ -21,6 +21,7 @@ fields:
     schema:
       format: html-blocks
   label: Information
+  description: use 'heading 3' for titles
 pages:
 - phase1.html
 - phase2.html
