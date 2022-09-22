@@ -70,6 +70,10 @@ fields:
         type: boolean
         label: Top or Bottom
         default: false
+      - name: wider
+        type: boolean
+        label: Wider
+        description: Turn on if there is a lot of text.
       config:
         min: 
         max: 
