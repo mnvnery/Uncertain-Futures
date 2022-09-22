@@ -22,4 +22,5 @@ fields:
       format: html-blocks
   label: Information
 pages:
+- phase1.html
 - phase2.html
