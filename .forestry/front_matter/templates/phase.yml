@@ -1,7 +1,23 @@
 ---
 label: Phase
-hide_body: false
+hide_body: true
+display_field: title
 fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: info
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Information
