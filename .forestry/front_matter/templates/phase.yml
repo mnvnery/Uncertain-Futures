@@ -21,3 +21,5 @@ fields:
     schema:
       format: markdown
   label: Information
+pages:
+- phase2.html
