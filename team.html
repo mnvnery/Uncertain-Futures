@@ -54,7 +54,7 @@ the_advisory_group:
   description: <p>Raha – <a href="" title="">Women’s Voices</a></p>
   portrait: assets/img/uncertain-futures-mac0020.jpg
 - name: Teodora Ilieva
-  description: Manchester resident
+  description: <p>Manchester resident</p>
   portrait: ''
 - name: Marie Greenhalgh
   description: <p><a href="" title="">Wythenshawe Good Neighbours</a></p>
@@ -190,7 +190,8 @@ team_profiles:
   <div class="group-grid team-text mb-5">
     {% for item in page.the_advisory_group reversed %}
     <div class="group-item">
-      <p><b>{{ item.name }}</b><br><div class="item-description">{{ item.description }}</div></p>
+      <div><b>{{ item.name }}</b></div>
+      <div class="item-description">{{ item.description }}</div>
     </div>
     {% endfor %}
   </div>
