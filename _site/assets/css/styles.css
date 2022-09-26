@@ -88,7 +88,13 @@ form button { border: 2px solid white; padding: 1vh 2vw; background-color: trans
 
 .team-text p { font-size: 1.15rem; }
 
-@media (max-width: 600px) { .group-grid { grid-template-columns: 1fr 1fr; gap: 3vw; } .group-item p { font-size: 0.9em; } .group-item { max-width: 50vw; } .profile-text p { font-size: 0.9em; } }
+.grid-img { height: 20vh; object-fit: cover; }
+
+.team-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1vw; }
+
+.span-2 { grid-column: span 2; }
+
+@media (max-width: 600px) { .group-grid { grid-template-columns: 1fr 1fr; gap: 3vw; } .group-item p { font-size: 0.9em; } .group-item { max-width: 50vw; } .profile-text p { font-size: 0.9em; } .grid-img { height: 13vh; } }
 
 .timeline { width: 100%; position: relative; overflow: auto; padding-left: 4vw; }
 
