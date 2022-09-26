@@ -37,6 +37,18 @@
 .team-text p
     font-size: 1.15rem
 
+.grid-img
+    height: 20vh
+    object-fit: cover
+
+.team-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 1vw
+
+.span-2
+    grid-column: span 2
+
 @media (max-width: 600px)
     .group-grid
         grid-template-columns: 1fr 1fr
@@ -48,3 +60,6 @@
 
     .profile-text p 
         font-size: 0.9em
+
+    .grid-img
+        height: 13vh
