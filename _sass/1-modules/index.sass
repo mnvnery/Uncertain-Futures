@@ -90,6 +90,9 @@ form button
     min-height: 50vh
     overflow-y: hidden    
 
+.logo
+    height: fit-content
+
 @media (min-width: 600px)
     .hero-info
         right: 10vw
@@ -98,7 +101,10 @@ form button
         display: none !important
 
     .logos-flex
-        flex-direction: column
+        align-items: center
+
+    .logo
+        margin-left: 2em
 
 @media (max-width: 600px)
     .subtitle
@@ -190,7 +196,9 @@ form button
         height: 100%
 
     .exhibition-info
-        display: none
+        display: flex
+        justify-content: space-between
+        margin-bottom: 1em
 
     .hero-section
         height: 90vh
