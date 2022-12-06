@@ -1,0 +1,11 @@
+---
+label: Artistic Productions
+hide_body: true
+fields:
+- name: page_blocks
+  type: blocks
+  template_types: []
+  config:
+    min: 
+    max: 
+  label: Page Blocks
