@@ -120,5 +120,35 @@ fields:
     max: 
     labelField: 
   label: Project Design and Management
+- name: participatory_research
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: institution
+    type: text
+    config:
+      required: false
+    label: Institution/Info
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Participatory Research
+- name: artistic_productions
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Artistic Productions
 pages:
 - team.html
