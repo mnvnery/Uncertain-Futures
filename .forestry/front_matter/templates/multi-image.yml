@@ -1,0 +1,8 @@
+---
+label: Multi-Image
+hide_body: true
+fields:
+- name: multi-images
+  type: image_gallery
+  config: {}
+  label: Multi-Images
