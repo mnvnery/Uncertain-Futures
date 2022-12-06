@@ -19,6 +19,10 @@ sections:
 - type: document
   path: research-themes.html
   label: Research Themes
+- type: document
+  path: artistic-productions.html
+  label: Artistic Productions
+  match: "**/*"
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: ''
