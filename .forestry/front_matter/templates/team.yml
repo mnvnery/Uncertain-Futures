@@ -166,5 +166,23 @@ fields:
     max: 
     labelField: 
   label: Artistic Productions
+- name: sponsors
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: info
+    type: text
+    config:
+      required: false
+    label: Info
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sponsors
 pages:
 - team.html
