@@ -13,3 +13,5 @@ fields:
     min: 
     max: 
   label: Page Blocks
+pages:
+- artistic-productions.html
