@@ -4,7 +4,11 @@ hide_body: true
 fields:
 - name: page_blocks
   type: blocks
-  template_types: []
+  template_types:
+  - text-block
+  - video-upload
+  - multi-image
+  - blank-image
   config:
     min: 
     max: 
