@@ -24,8 +24,8 @@ impact_tracker: "<p>This timeline demonstrates how the project has unfolded and 
   and enjoy some of our work. <br><strong>Scroll horizontally to explore.</strong></p>"
 slideshow:
 - "/assets/img/5.jpg"
-- assets/img/slideshow-1.jpg
-- assets/img/slideshow-3.jpg
+- /assets/img/slideshow-1.jpg
+- /assets/img/slideshow-3.jpg
 image_1: assets/img/index-1.jpg
 image_2: assets/img/index-2.jpg
 years:
@@ -304,12 +304,12 @@ years:
     <div class="carousel-inner">
         {% for item in page.slideshow limit: 1%}
         <div class="carousel-item active">
-            <img src="{{ site.baseurl }}/{{ item }}" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+            <img src="{{ site.baseurl }}{{ item }}" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
         </div>
         {% endfor %}
         {% for item in page.slideshow offset: 1 %}
         <div class="carousel-item">
-            <img src="{{ site.baseurl }}/{{ item }}" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
+            <img src="{{ site.baseurl }}{{ item }}" class="d-block w-100 h-100 carousel-img" alt="Advisory Group Portrait">
         </div>
         {% endfor %}
     </div>
