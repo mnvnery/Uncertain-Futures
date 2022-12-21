@@ -92,97 +92,26 @@ fields:
     config:
       required: false
     label: Link
+  - name: section
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Project Design and Management
+      - Participatory Research
+      - Artistic Productions
+      - Sponsors
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Section
   config:
     min: 
     max: 
     labelField: 
   label: Team Profiles
-- name: project_design_and_management
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: institution
-    type: text
-    config:
-      required: false
-    label: Institution/Info
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Project Design and Management
-- name: participatory_research
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: institution
-    type: text
-    config:
-      required: false
-    label: Institution/Info
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Participatory Research
-- name: artistic_productions
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: institution
-    type: text
-    config:
-      required: false
-    label: Institution/Info
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Artistic Productions
-- name: sponsors
-  type: field_group_list
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: info
-    type: text
-    config:
-      required: false
-    label: Info
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Sponsors
 pages:
 - team.html
