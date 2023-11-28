@@ -1,0 +1,121 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "assets/img"
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Aesthetic Productions'
+        name: "aesthetic-productions"
+        file: 'aesthetic-productions.html'
+        fields:
+          - label: 'Page Blocks'
+            name: 'page_blocks'
+            widget: list
+            types: 
+              - label: Text Block 
+                name: text
+                widget: object
+                fields:
+                  - { label: Text, name: text, widget: markdown, modes: [rich_text] }
+              - label: Single Image
+                name: blank-image
+                widget: object
+                fields: 
+                  - { label: Image , name: image , widget: image }
+              - label: Multi Image
+                name: multi-image
+                widget: object
+                fields:
+                  - { label: 'Multi Images', name: 'multi-images', widget: list, field: {label: Image, name: image, widget: image}}
+              - label: Video Upload
+                name: video-upload
+                widget: object
+                fields:
+                  - { label: Video Link, name: video_link, widget: string }
+      - label: 'Home'
+        name: "home"
+        file: 'index.html'
+        fields:
+          - { label: 'Slideshow', name: 'slideshow', widget: list, field: {label: Image, name: image, widget: image}}
+          - { label: 'About the Project', name: about_the_project, widget: markdown, modes: [rich_text] }
+          - { widget: image, name: image_1, label: "Image 1" }
+          - { label: 'Timeline', name: impact_tracker, widget: markdown, modes: [rich_text] }
+          - { widget: image, name: image_2, label: "Image 2" }
+          - widget: list
+            name: years
+            label: "Years" 
+            fields: 
+              - { label: Year, name: year, widget: string }
+              - label: Month
+                name: month
+                widget: list
+                fields: 
+                  - { label: Month, name: month, widget: string }
+                  - label: Events
+                    name: events
+                    widget: list
+                    fields:
+                      - { label: Event, name: event, widget: markdown, modes: [rich_text] }
+                      - { label: Top or Bottom, name: top_or_bottom, widget: boolean }
+                      - { label: Wider, name: wider, widget: boolean, hint: 'Turn on if there is a lot of text.' }
+      - label: Team
+        name: team
+        file: team.html
+        fields:
+          - label: Research Team Fields
+            name: research_team_fields
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown, modes: [rich_text] }
+          - label: The Advisory Group
+            name: the_advisory_group
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: markdown, modes: [rich_text] }
+              - { widget: image, name: portrait, label: "Portrait" }
+          - label: Team Profiles
+            name: team_profiles
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Institution, name: institution, widget: string }
+              - { label: Information, name: information, widget: markdown, modes: [rich_text] }
+              - { widget: image, name: image, label: "Image" }
+              - { label: Link, name: link, widget: string }
+              - label: "Section"
+                name: "section"
+                widget: "select"
+                options: ["Project Design and Management", "Participatory Research", "Artistic Productions", "Sponsors"]
+      - label: Phase 1 
+        name: phase-1
+        file: phase1.html
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles"  }
+      - label: Phase 2
+        name: phase-2
+        file: phase2.html
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles"  }
+      - label: Research Themes
+        name: research-themes
+        file: research-themes.html
+        fields:
+          - label: Themes
+            name: themes
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Info, name: info, widget: markdown, modes: [rich_text] }
+
