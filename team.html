@@ -245,7 +245,7 @@ artistic_productions: []
     <div class="group-item">
       <img src="{{site.baseurl}}/{{item.portrait}}" class="grid-img">
       <div><b>{{ item.name }}</b></div>
-      <div class="item-description">{{ item.description }}</div>
+      <div class="item-description">{{ item.description | markdownify }}</div>
     </div>
     {% endfor %}
   </div>
