@@ -10,34 +10,6 @@ collections:
     editor:
       preview: false
     files:
-      - label: 'Aesthetic Productions'
-        name: "aesthetic-productions"
-        file: 'aesthetic-productions.html'
-        fields:
-          - label: 'Page Blocks'
-            name: 'page_blocks'
-            widget: list
-            types: 
-              - label: Text Block 
-                name: text
-                widget: object
-                fields:
-                  - { label: Text, name: text, widget: markdown, modes: [rich_text] }
-              - label: Single Image
-                name: blank-image
-                widget: object
-                fields: 
-                  - { label: Image , name: image , widget: image }
-              - label: Multi Image
-                name: multi-image
-                widget: object
-                fields:
-                  - { label: 'Multi Images', name: 'multi-images', widget: list, field: {label: Image, name: image, widget: image}}
-              - label: Video Upload
-                name: video-upload
-                widget: object
-                fields:
-                  - { label: Video Link, name: video_link, widget: string }
       - label: 'Home'
         name: "home"
         file: 'index.html'
@@ -118,4 +90,31 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: Subtitle, name: subtitle, widget: string }
               - { label: Info, name: info, widget: markdown, modes: [rich_text] }
-
+      - label: 'Aesthetic Productions'
+        name: "aesthetic-productions"
+        file: 'aesthetic-productions.html'
+        fields:
+          - label: 'Page Blocks'
+            name: 'page_blocks'
+            widget: list
+            types: 
+              - label: Text Block 
+                name: text
+                widget: object
+                fields:
+                  - { label: Text, name: text, widget: markdown, modes: [rich_text] }
+              - label: Single Image
+                name: blank-image
+                widget: object
+                fields: 
+                  - { label: Image , name: image , widget: image }
+              - label: Multi Image
+                name: multi-image
+                widget: object
+                fields:
+                  - { label: 'Multi Images', name: 'multi-images', widget: list, field: {label: Image, name: image, widget: image}}
+              - label: Video Upload
+                name: video-upload
+                widget: object
+                fields:
+                  - { label: Video Link, name: video_link, widget: string }

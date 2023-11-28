@@ -99,6 +99,6 @@ themes:
             <h1 class="bold mb-5">Participatory<br>Research Themes</h1>
             {% for item in page.themes reversed %}
             <h4 class="team-text yellow-underline mb-3 bold">{{ item.title }}<br>{{item.subtitle}}</h4>
-            <div class="team-text mb-5">{{ item.info }}</div>
+            <div class="team-text mb-5">{{ item.info | markdownify }}</div>
             {% endfor %}
     </div>

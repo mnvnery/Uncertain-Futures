@@ -211,7 +211,7 @@ sponsors: []
   <h1 class="bold mb-5">Participatory<br>Research Team</h1>
   {% for item in page.research_team_fields reversed %}
   <h3 class="team-text yellow-underline mb-3"><b>{{ item.title }}</b></h3>
-  <div class="team-text mb-5">{{ item.description }}</div>
+  <div class="team-text mb-5">{{ item.description | markdownify }}</div>
   {% endfor %}
 
   <h3 class="team-text yellow-underline mb-3"><b>The Advisory Group</b></h3>

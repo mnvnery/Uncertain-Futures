@@ -110,7 +110,7 @@ page_blocks:
             <h1 class="bold mb-5">Aesthetic<br>Productions</h1>
             {% for block in page.page_blocks %}
                 {% if block.template == 'text-block' %}
-                <div class="team-text mb-5">{{block.text}}</div>
+                <div class="team-text mb-5">{{block.text | markdownify }}</div>
                 {% elsif block.template == 'video-upload' %}
                 <div class="team-text mb-5">
                     <iframe style="aspect-ratio: 16 / 9; width: 100%;" src="https://www.youtube.com/embed/svnTPLZCGL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
