@@ -378,7 +378,7 @@ years:
 <a id="impact"></a>
 <div class="text-container">
     <h1 class="bold">Timeline</h1>
-    <div class='information-text'>{{ page.impact_tracker }}</div>
+    <div class='information-text'>{{ page.impact_tracker | markdownify }}</div>
 </div>
 <div class="timeline">
     <div class="middle-line"></div>
@@ -391,17 +391,17 @@ years:
                     {% if e.top_or_bottom == true %}
                     <div class="event">
                         <div class="d-flex flex-column-reverse event-flex">
-                            <div {% if e.wider == false %} class="event-text" {% elsif e.wider == true %} class="event-text-wider" {% endif %}>{{ e.event }}</div>
+                            <div {% if e.wider == false %} class="event-text" {% elsif e.wider == true %} class="event-text-wider" {% endif %}>{{ e.event  | markdownify }}</div>
                             <div class="line"></div>
                             <div class="dot"></div>
                             <div class="line invisible"></div>
-                            <div class="event-text invisible">{{ e.event }}</div>
+                            <div class="event-text invisible">{{ e.event | markdownify }}</div>
                         </div>
                     </div>
                     {% elsif e.top_or_bottom == false %}
                     <div class="event">
                         <div class="d-flex flex-column-reverse event-flex">
-                            <div class="event-text invisible">{{ e.event }}</div>
+                            <div class="event-text invisible">{{ e.event | markdownify }}</div>
                             <div class="line invisible"></div>
                             <div class="dot"></div>
                             <div class="line"></div>
