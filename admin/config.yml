@@ -24,8 +24,8 @@ collections:
             label: "Years" 
             fields: 
               - { label: Year, name: year, widget: string }
-              - label: Month
-                name: month
+              - label: Months
+                name: months
                 widget: list
                 fields: 
                   - { label: Month, name: month, widget: string }
