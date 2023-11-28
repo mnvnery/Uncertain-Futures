@@ -1,7 +1,7 @@
 ---
 layout: default
 page_blocks:
-  - template: text-block
+  - type: text-block
     text: "<p><strong>Exhibitions</strong></p><p>The exhibitions at Manchester Art
       Gallery have brought together two of Suzanne Lacy's Manchester projects,
       <em>Cleaning Conditions </em>and a new work, <em>Uncertain Futures,
@@ -59,33 +59,33 @@ page_blocks:
       and aims to create real social change and affect social policy.</p><p><img
       src=\"/assets/img/installation-space-2.jpg\" title=\"Photo of Installation
       2: Michael Pollard\"></p>"
-  - template: text-block
+  - type: text-block
     text: <p><strong>Film Productions</strong></p>
-  - template: text-block
+  - type: text-block
     text: "<p>As a Woman Over 50</p> made by Advisory Group filmed and edited by
       Alina Akbar and Finn Browning "
-  - template: video-upload
+  - type: video-upload
     video_link: https://www.youtube.com/watch?v=svnTPLZCGL8
-  - template: text-block
+  - type: text-block
     text: >-
       <p>Soup Collective: Mark Thomas sound/text track (From Installation 1)</p>
 
 
       Click here to view this: https://video.manchester.ac.uk/faculties/dcfc56d26eb49a4a9b05f8883bae189f/372697d9-b1ca-4e72-a0d5-5be55e121a75/
-  - template: text-block
+  - type: text-block
     text: >-
       <p>Mark Thomas 100 women dinner (from installation 2)</p>
 
 
       Click here to view: https://video.manchester.ac.uk/faculties/dcfc56d26eb49a4a9b05f8883bae189f/cadbe521-b878-48f3-b19b-0a13d1c56928/
-  - template: text-block
+  - type: text-block
     text: "<p>Photographers</p><p><img src=\"/assets/img/5.jpg\" title=\"Photo of
       100 Women's Dinner: Andrew Brooks\"></p><p><img
       src=\"/assets/img/ag-on-steps.jpg\" title=\"Photo of Advisory Group on the
       steps: Audrey Albert\"></p><p></p><p><img src=\"/assets/img/picture2.jpg\"
       title=\"Photo of Zoom Advisory Group: Ahmarni
       Vidal-Simon\"></p><p></p><p></p><p></p><p></p>"
-  - template: text-block
+  - type: text-block
     text: ""
   - type: text
     text: Test
@@ -123,9 +123,9 @@ page_blocks:
     <div class="text-container team-container">
             <h1 class="bold mb-5">Aesthetic<br>Productions</h1>
             {% for block in page.page_blocks %}
-                {% if block.template == 'text-block' %}
+                {% if block.type == 'text-block' %}
                 <div class="team-text mb-5">{{block.text | markdownify }}</div>
-                {% elsif block.template == 'video-upload' %}
+                {% elsif block.type == 'video-upload' %}
                 <div class="team-text mb-5">
                     <iframe style="aspect-ratio: 16 / 9; width: 100%;" src="https://www.youtube.com/embed/svnTPLZCGL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
