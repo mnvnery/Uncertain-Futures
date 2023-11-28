@@ -44,41 +44,42 @@ collections:
             name: research_team_fields
             widget: list
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: markdown, modes: [rich_text] }
+              - { label: Title, name: title, widget: string, required: false  }
+              - { label: Description, name: description, widget: markdown, modes: [rich_text], required: false  }
           - label: The Advisory Group
             name: the_advisory_group
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Description, name: description, widget: markdown, modes: [rich_text] }
-              - { widget: image, name: portrait, label: "Portrait" }
+              - { label: Name, name: name, widget: string, required: false }
+              - { label: Description, name: description, widget: markdown, modes: [rich_text], required: false }
+              - { widget: image, name: portrait, label: "Portrait", required: false }
           - label: Team Profiles
             name: team_profiles
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Institution, name: institution, widget: string }
-              - { label: Information, name: information, widget: markdown, modes: [rich_text] }
-              - { widget: image, name: image, label: "Image" }
-              - { label: Link, name: link, widget: string }
+              - { label: Name, name: name, widget: string, required: false }
+              - { label: Title, name: title, widget: string, required: false }
+              - { label: Institution, name: institution, widget: string, required: false }
+              - { label: Information, name: information, widget: markdown, modes: [rich_text], required: false }
+              - { widget: image, name: image, label: "Image", required: false }
+              - { label: Link, name: link, widget: string, required: false}
               - label: "Section"
                 name: "section"
                 widget: "select"
+                required: false
                 options: ["Project Design and Management", "Participatory Research", "Artistic Productions", "Sponsors"]
       - label: Phase 1 
         name: phase-1
         file: phase1.html
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles"  }
+          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles", required: false   }
       - label: Phase 2
         name: phase-2
         file: phase2.html
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles"  }
+          - { label: Title, name: title, widget: string  }
+          - { label: Information, name: info, widget: markdown, modes: [rich_text], hint: "use 'heading 3' for titles", required: false  }
       - label: Research Themes
         name: research-themes
         file: research-themes.html
@@ -87,9 +88,9 @@ collections:
             name: themes
             widget: list
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Subtitle, name: subtitle, widget: string }
-              - { label: Info, name: info, widget: markdown, modes: [rich_text] }
+              - { label: Title, name: title, widget: string, required: false }
+              - { label: Subtitle, name: subtitle, widget: string, required: false  }
+              - { label: Info, name: info, widget: markdown, modes: [rich_text], required: false  }
       - label: 'Aesthetic Productions'
         name: "aesthetic-productions"
         file: 'aesthetic-productions.html'
@@ -102,7 +103,7 @@ collections:
                 name: text-block
                 widget: object
                 fields:
-                  - { label: Text, name: text, widget: markdown, modes: [rich_text] }
+                  - { label: Text, name: text, widget: markdown, modes: [rich_text], required: false }
               - label: Single Image
                 name: blank-image
                 widget: object
