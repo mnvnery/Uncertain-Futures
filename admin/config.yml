@@ -99,7 +99,7 @@ collections:
             widget: list
             types: 
               - label: Text Block 
-                name: text
+                name: text-block
                 widget: object
                 fields:
                   - { label: Text, name: text, widget: markdown, modes: [rich_text] }
